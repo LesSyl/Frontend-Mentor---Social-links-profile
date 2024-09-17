@@ -39,7 +39,7 @@ body {
 	&__img {
 		width: 35%;
 		border-radius: 50%;
-		animation: show 0.5s linear forwards 0.5s, rotate 20s linear infinite 3s;
+		animation: show 0.5s linear forwards 0.5s;
 	}
 	&__name {
 		font-size: 1.2rem;
