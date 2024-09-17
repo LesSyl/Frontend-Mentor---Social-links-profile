@@ -1,0 +1,181 @@
+@use 'colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	// margin: 0;
+	// padding: 0 2em;
+	font-family: 'Inter', sans-serif;
+	color: $color;
+	background-color: $bg-color;
+}
+.wrapper {
+	margin: 0;
+	padding: 1em;
+	max-width: 1200px;
+}
+.card {
+	height: 500px;
+	width: 280px;
+	background-color: $card-color;
+	border-radius: 1em;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40%;
+	&__img {
+		width: 35%;
+		border-radius: 50%;
+		animation: show 0.5s linear forwards 0.5s, rotate 20s linear infinite 3s;
+	}
+	&__name {
+		font-size: 1.2rem;
+		font-weight: 400;
+		margin-top: 1em;
+		animation: show 1s linear forwards 1s;
+	}
+	&__address {
+		padding: 1em 0 2em 0;
+		font-size: 0.7rem;
+		color: $address-color;
+		animation: show 1s linear forwards 1.2s;
+	}
+	&__profession {
+		font-size: 0.7rem;
+		margin-bottom: 1em;
+		animation: show 1s linear forwards 1.4s;
+	}
+	&__img,
+	&__name,
+	&__address,
+	&__profession {
+		opacity: 0;
+	}
+}
+.link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5em;
+	&__github,
+	&__frontendMentor,
+	&__linkedin,
+	&__twitter,
+	&__instagram {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0.45em;
+		padding: 1em;
+		width: 100%;
+		font-size: 0.8rem;
+		text-decoration: none;
+		color: $color;
+		background-color: $link-color;
+		border-radius: 5px;
+		opacity: 0;
+	}
+	&__github {
+		animation: show 1s linear forwards 1.6s;
+	}
+	&__frontendMentor {
+		animation: show 1s linear forwards 1.8s;
+	}
+	&__linkedin {
+		animation: show 1s linear forwards 2s;
+	}
+	&__twitter {
+		animation: show 1s linear forwards 2.2s;
+	}
+	&__instagram {
+		animation: show 1s linear forwards 2.4s;
+	}
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	font-size: 0.5rem;
+	padding: 1em;
+	&__link {
+		color: $color;
+		text-decoration: none;
+		border-bottom: 0.5mm ridge $footer-color;
+	}
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.card {
+		height: 560px;
+		width: 350px;
+	}
+
+	.info {
+		&__name {
+			font-size: 1.5rem;
+		}
+		&__address,
+		&__profession {
+			font-size: 0.9rem;
+		}
+	}
+
+	.link {
+		&__github,
+		&__frontendMentor,
+		&__linkedin,
+		&__twitter,
+		&__instagram {
+			cursor: pointer;
+			transition: color 1s, font-weight 1s, background-color 0.5s;
+			&:hover {
+				font-weight: 600;
+				color: $bg-color;
+				background-color: $address-color;
+			}
+		}
+	}
+	.attribution {
+		font-size: 0.8rem;
+		&__link {
+			cursor: pointer;
+			transition: color 0.1s;
+			&:hover {
+				color: $address-color;
+				caret-color: black;
+			}
+		}
+	}
+}
