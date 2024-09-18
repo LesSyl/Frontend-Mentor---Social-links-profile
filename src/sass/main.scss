@@ -37,19 +37,19 @@ body {
 	align-items: center;
 	height: 40%;
 	&__img {
-		width: 35%;
+		width: 30%;
 		border-radius: 50%;
-		animation: show 0.5s linear forwards 0.5s;
+		animation: show 0.5s linear forwards 0.5s, rotate 30s linear infinite;
 	}
 	&__name {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		font-weight: 400;
-		margin-top: 1em;
+		margin-top: 0.5em;
 		animation: show 1s linear forwards 1s;
 	}
 	&__address {
 		padding: 1em 0 2em 0;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		color: $address-color;
 		animation: show 1s linear forwards 1.2s;
 	}
@@ -70,7 +70,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0.5em;
 	&__github,
 	&__frontendMentor,
 	&__linkedin,
@@ -144,11 +143,11 @@ body {
 
 	.info {
 		&__name {
-			font-size: 1.5rem;
+			font-size: 1.7rem;
 		}
 		&__address,
 		&__profession {
-			font-size: 0.9rem;
+			font-size: 1rem;
 		}
 	}
 
@@ -158,6 +157,7 @@ body {
 		&__linkedin,
 		&__twitter,
 		&__instagram {
+			margin: 0.5em;
 			cursor: pointer;
 			transition: color 1s, font-weight 1s, background-color 0.5s;
 			&:hover {
