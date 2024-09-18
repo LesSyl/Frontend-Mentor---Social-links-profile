@@ -17,11 +17,11 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Screenshot
 Desktop
 
-![](images/desktop.jpeg)
+![](src/img/desktop.jpeg)
 
 Mobile
 
-![](images/mobile.jpeg)
+![](src/img/mobile.jpeg)
 
 ### Links
 
