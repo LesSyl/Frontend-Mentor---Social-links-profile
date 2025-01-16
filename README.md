@@ -26,8 +26,8 @@ Mobile
 ### Links
 
 - Repository URL:[GitHub](https://github.com/LesSyl/Social-links-profile)
-- Solution URL: [Frontendmentor]()
-- Live Site URL: [Live](https://lessyl.github.io/Social-links-profile/)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/social-links-profile-solution-8Cj7hosw_1)
+- Live Site URL: [Live](https://lessyl.github.io/Frontend-Mentor---Social-links-profile/)
 
 
 ## My process
